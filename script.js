@@ -1,6 +1,6 @@
 var toggle_btn;
 var big_wrapper;
-var hamburger_menu
+var hamburger_menu;
 
 function declare(){
     toggle_btn = document.querySelector(".toggle-btn");
