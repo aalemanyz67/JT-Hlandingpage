@@ -65,6 +65,10 @@ a {
     padding: 0 3 rem;
     z-index: 10;
 }
+header{
+    position: relative;
+    z-index: 70;
+}
 
 header .container{
     display: flex;
@@ -125,6 +129,8 @@ border-radius: 50%;
     transform: scale(1) !important;
 }
 .hamburger-menu{
+    position: relative; 
+    z-index: 99;
     width: 2rem;
     height: 2rem;
     background-color: black;
@@ -132,13 +138,14 @@ border-radius: 50%;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    display: none;
 
 }
 .hamburger-menu .bar{
     position: relative;
     width: 100%;
     height: 3px;
-    background-color: #fff;
+    background-color: var(--darkTwo);
     border-radius: 3px;
     transition: .5s;
 
@@ -149,7 +156,7 @@ border-radius: 50%;
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: var(--darkTwo);
     transition: 0.5s;
 
 }
@@ -258,6 +265,20 @@ border-radius: 50%;
     .person{
         width:100%;
         transform: none
+
+    }
+    .hamburger-menu{
+        display: flex;
+
+    }
+    .links{
+        position: fixed;
+        top: 0;
+        right: 0;
+        max-width: 450%;
+        height: 100%;
+        background-color: var(--mainColor) ;
+        z-index: 95;
 
     }
 }
