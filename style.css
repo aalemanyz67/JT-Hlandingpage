@@ -56,8 +56,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    
 }
 .container{
    position: relative;
@@ -199,6 +198,19 @@ border-radius: 50%;
     align-items: center;
     justify-content: center;
     padding-top: 10rem;
+}
+
+.showcase-area-mission .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    padding-top: 10rem;
+
+}
+
+.carousel {
+    width:25rem;
 }
 
 .big-title{
