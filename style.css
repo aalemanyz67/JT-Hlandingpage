@@ -128,6 +128,9 @@ border-radius: 50%;
     background-color: var(--hoverColor);
     transform: scale(1) !important;
 }
+
+
+
 .hamburger-menu{
     position: relative; 
     z-index: 99;
@@ -203,10 +206,12 @@ border-radius: 50%;
 
 
 .person{
-    width:75%;
+    width:60%;
     transform: translate(15%, 25px);
 
 }
+
+
 .toggle-btn {
     display: inline-block;
     border: none;
