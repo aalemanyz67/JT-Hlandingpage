@@ -294,6 +294,7 @@ form{
     background:#fff;
     display: flex;
     width:fit-content;
+    
 
 }
 form input{
@@ -302,9 +303,17 @@ form input{
     font-size: 16px;
     padding:10px 20px;
     width: 400px;
+    
 
     
 }
+span{
+    padding: 10px;
+    display: block;
+
+
+}
+
 
 .copy{
     position: absolute;
@@ -415,7 +424,38 @@ form input{
         font-size: 1.25rem;
 
     }
-}
+    .showcase-area-story {
+        padding: 2.5rem 0;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .showcase-area-story .container{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        grid-gap: 2rem;
+    }
+    .showcase-area-mission {
+        padding: 2.5rem 0;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .showcase-area-mission .container{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        grid-gap: 2rem;
+    }
+    .sign-up{
+        padding: 2.5rem 0;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    form{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        margin:1rem
+    }
+
+
 
 @media screen and (max-width: 470px) {
     .container{
