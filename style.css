@@ -108,7 +108,7 @@ border-radius: 50%;
 }
 .links a{
     color: var(--lightTwo);
-    margin-left:2.5rem;
+    margin-left:1.5rem;
     display: inline-block;
     transition: 0.3s;
     
@@ -209,6 +209,17 @@ border-radius: 50%;
 
 }
 
+
+.showcase-area-support .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+}
+.right-qr{
+    width:75%
+}
 .carousel {
     width:25rem;
 }
@@ -444,6 +455,14 @@ span{
         justify-content: center;
         grid-gap: 2rem;
     }
+    .showcase-area-support .container{
+        padding: 2.5rem 0;
+        max-width: 700px;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        grid-gap: 2rem;
+    }
     .sign-up{
         padding: 2.5rem 0;
         max-width: 700px;
@@ -470,4 +489,5 @@ span{
         margin: 1.1rem 0 1.5rem;
 
     }
+}
 }
