@@ -112,13 +112,13 @@
             <section class="sign-up">
                 <h3>Stay in Touch</h3>
                 <p>Subscribe to our Newsletter.</p>
-                <form>
+                <form name="submit-to-google-sheet">
                     <input type="email" name="Email" placeholder="YourEmail" required>
                     <button type="submit">
                         <i class="fa-regular fa-paper-plane"></i>
                     </button>
                 </form>
-                <span>Thank You for Subcribing! </span>
+                <span id="msg"> </span>
             </section>
             <Section>
                 <div class="showcase-area-support">
@@ -160,6 +160,24 @@
 
         </div>
     </main>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxOH0ljHR9H2yjvaZbX9wgcV1M9qrUVMCh63ug5t6UkT9356kFMGf0eY8t8k2ICdkaA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Thank You For Subsribing!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 
 

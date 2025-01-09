@@ -305,6 +305,7 @@ form{
     background:#fff;
     display: flex;
     width:fit-content;
+    margin:auto
     
 
 }
@@ -315,8 +316,12 @@ form input{
     padding:10px 20px;
     width: 400px;
     
+}
 
-    
+form button{
+    width:30px;
+    cursor: pointer;
+
 }
 span{
     padding: 10px;
