@@ -478,11 +478,11 @@ span{
         box-sizing: border-box;
     }
     
-    form{
+    form .container{
         grid-template-columns: 1fr;
         justify-content: center;
-        margin:0 auto;  
-        padding: 0 1
+        margin:100% auto;  
+        
             
     }
 
