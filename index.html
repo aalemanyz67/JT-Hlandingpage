@@ -14,7 +14,7 @@
     <main>
         <div class="big-wrapper light">
             <header>
-                <nav class="container">
+                <nav id="top" class="container">
                     <div class="logo">
                         <img src="images/jtlogo.png" alt="Logo">
                         <h3>Greer Ministries </h3>
@@ -22,10 +22,10 @@
                     
                     <nav class="links">
                         <ul>
-                           <li><a href="#" class="btn">Story</a></li>
-                           <li><a href="#" class="btn">Mission</a></li>
-                           <li><a href="#" class="btn">News Letter</a></li>
-                           <li><a href="#" class="btn">Support</a></li>
+                           <li><a href="#story" class="btn">Story</a></li>
+                           <li><a href="#mission" class="btn">Mission</a></li>
+                           <li><a href="#newsletter" class="btn">News Letter</a></li>
+                           <li><a href="#support" class="btn">Support</a></li>
                         </ul>
                     </nav>
                     <div class="overlay"></div>
@@ -57,7 +57,7 @@
                 <div class="container">
                     <div class="left">
                         <div clss="big-title">
-                            <h1>Our Story</h3>
+                            <h1 id="story">Our Story</h3>
                         </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatum veniam dolor assumenda, qui, voluptatibus natus hic magni dolores illo corrupti, porro quasi fugit iure consectetur odit velit exercitationem odio.</p>
                     </div>
@@ -103,7 +103,7 @@
                 
                     <div class="right">
                         <div clss="big-title">
-                            <h1>Mission</h3>
+                            <h1 id="mission">Mission</h3>
                         </div>
                         <p class="mission-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatum veniam dolor assumenda, qui, voluptatibus natus hic magni dolores illo corrupti, porro quasi fugit iure consectetur odit velit exercitationem odio.</p>
                     </div>
@@ -111,7 +111,7 @@
             </section>
             <section class="sign-up">
                 <div class="container">
-                <h3>Stay in Touch</h3>
+                <h3 id="newsletter">Stay in Touch</h3>
                 <p>Subscribe to our Newsletter.</p>
                 <form class="googlesheet" name="submit-to-google-sheet">
                     <input type="email" name="Email" placeholder="YourEmail" required>
@@ -127,7 +127,7 @@
                     <div class="container">               
                         <div class="left">
                             <div class="big-title">
-                            <h1>As We Journey On... Consider Join Us</h1>
+                            <h1 id="support">As We Journey On... Consider Join Us</h1>
                         </div>
                         <p class="text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione tempore dicta ipsam consectetur reiciendis reprehenderit itaque impedit esse vel nostrum corrupti blanditiis, laboriosam molestiae, quam fugit temporibus voluptate praesentium ab.
@@ -180,6 +180,7 @@
             .catch(error => console.error('Error!', error.message))
         })
       </script>
+      <a href="top">Back to the Top</a>
 </body>
 
 
