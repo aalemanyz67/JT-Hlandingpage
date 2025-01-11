@@ -449,17 +449,33 @@ span{
         grid-template-columns: 1fr;
         justify-content: center;
         grid-gap: 2rem;
+        
+    }
+    .showcase-area-story .container p{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        grid-gap: 2rem;
+        max-width:300px
+
     }
     .showcase-area-mission {
         padding: 2.5rem 0;
         max-width: 700px;
-        margin: 0 auto;
+        margin-top: 0 auto;
+
     }
-    .showcase-area-mission .container{
+    .showcase-area-mission .container {
         grid-template-columns: 1fr;
         justify-content: center;
         grid-gap: 2rem;
+        width: auto;
+        height: auto;
+
     }
+      
+     
+    
+    
     .showcase-area-support .container{
         padding: 2.5rem 0;
         max-width: 700px;
@@ -468,23 +484,24 @@ span{
         justify-content: center;
         grid-gap: 2rem;
     }
+    .right #carouselExampleIndicators{
+        width:auto;
+    }
     .sign-up{
         padding: 1.5rem 0;
-        max-width: 700px;
+        max-width: 350px;
         margin: 0 auto;
         grid-template-columns: 1fr;
         justify-content: center;
         grid-gap: 1rem;
         box-sizing: border-box;
     }
-    
-    form .container{
-        grid-template-columns: 1fr;
-        justify-content: center;
-        margin:100% auto;  
-        
-            
+     .googlesheet{
+        max-width: 300px;
     }
+    
+
+    
 
 
 
